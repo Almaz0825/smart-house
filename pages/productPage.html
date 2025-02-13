@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Умный Дом</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="shortcut icon" href="../assets/image/logo/logo.svg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="container">
+        <a href="../index.html" class="logo">
+            <img src="../assets/image/logo/logo.svg" alt="logo">
+            <p>Умный Дом</p>
+        </a>
+        <div class="nav_block">
+            <nav>
+                <a href="../index.html">Главная</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="about.html">О компании</a>
+            </nav>
+            <a href="authorization.html" class="autoriz">
+                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M24.6944 29.0121C22.5582 26.6263 19.4544 25.125 16 25.125C12.5456 25.125 9.44154 26.6263 7.30534 29.0121M16 31.7917C7.71573 31.7917 1 25.0759 1 16.7917C1 8.50739 7.71573 1.79166 16 1.79166C24.2843 1.79166 31 8.50739 31 16.7917C31 25.0759 24.2843 31.7917 16 31.7917ZM16 20.125C13.2386 20.125 11 17.8864 11 15.125C11 12.3636 13.2386 10.125 16 10.125C18.7614 10.125 21 12.3636 21 15.125C21 17.8864 18.7614 20.125 16 20.125Z"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </a>
+        </div>
+    </header>
+    <!-- header -->
+
+    <!-- product -->
+    <div class="product container mt-50">
+        <div class="block">
+            <div class="category">
+                <p>Умные колонки</p>
+                <img src="../assets/image/catalog/arrow2.svg" alt="">
+            </div>
+            <div class="product_card">
+                <div class="info">
+                    <div class="product_img">
+                        <div class="mini_img">
+                            <img src="../assets/image/productPage/black/image_1.png" alt="" class="choise-2"
+                                onclick="slider_2('.choise-2')">
+                            <img src="../assets/image/productPage/black/image_2.png" alt="" class="choise-3"
+                                onclick="slider_2('.choise-3')">
+                            <img src="../assets/image/productPage/black/image_3.png" alt="" class="choise-4"
+                                onclick="slider_2('.choise-4')">
+                            <img src="../assets/image/productPage/black/image_4.png" alt="" class="choise-5"
+                                onclick="slider_2('.choise-5')">
+                            <button class="scroll_btn">
+                                <img src="../assets/image/productPage/Vector.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="basic_img">
+                            <img src="../assets/image/productPage/black/image_1.png" alt="" class="choise-1">
+                        </div>
+                    </div>
+                    <div class="text">
+                        <div class="name">
+                            <p>Умная колонка Яндекс Станция Макс с Zigbee</p>
+                        </div>
+                        <div class="review">
+                            <p>4.8</p>
+                            <div class="stars">
+                                <img src="../assets/image/productPage/star.svg" alt="">
+                                <img src="../assets/image/productPage/star.svg" alt="">
+                                <img src="../assets/image/productPage/star.svg" alt="">
+                                <img src="../assets/image/productPage/star.svg" alt="">
+                                <img src="../assets/image/productPage/star.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="color">
+                            <p><span class="bold">Цвет: </span> <span class="color_text">черный</span></p>
+                            <div class="color_choise">
+                                <input type="radio" name="color" id="color-1" checked>
+                                <label for="color-1">
+                                    <img id="img_color_1" src="../assets/image/productPage/image_color_1.png"
+                                        alt="черный"
+                                        onclick="slider('../assets/image/productPage/black/'); color_text('img_color_1')">
+                                </label>
+                                <input type="radio" name="color" id="color-2">
+                                <label for="color-2">
+                                    <img id="img_color_2" src="../assets/image/productPage/image_color_2.png"
+                                        alt="бежевый"
+                                        onclick="slider('../assets/image/productPage/grey/'); color_text('img_color_2')">
+                                </label>
+                                <input type="radio" name="color" id="color-3">
+                                <label for="color-3">
+                                    <img id="img_color_3" src="../assets/image/productPage/image_color_3.png"
+                                        alt="красный"
+                                        onclick="slider('../assets/image/productPage/red/'); color_text('img_color_3')">
+                                </label>
+                                <input type="radio" name="color" id="color-4">
+                                <label for="color-4">
+                                    <img id="img_color_4" src="../assets/image/productPage/image_color_4.png"
+                                        alt="зеленый"
+                                        onclick="slider('../assets/image/productPage/green/'); color_text('img_color_4')">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="specs">
+                            <div class="item">
+                                <p class="name">Голосовой<br> помощник</p>
+                                <div class="line"></div>
+                                <p class="value">Алиса</p>
+                            </div>
+                            <div class="item">
+                                <p class="name">Язык голосового<br> помощника</p>
+                                <div class="line"></div>
+                                <p class="value">русский</p>
+                            </div>
+                            <div class="item">
+                                <p class="name">Экосистема</p>
+                                <div class="line"></div>
+                                <p class="value">Умный дом Яндекса</p>
+                            </div>
+                            <div class="item">
+                                <p class="name">Питание</p>
+                                <div class="line"></div>
+                                <p class="value">от сети, От сети 220 В</p>
+                            </div>
+                            <button class="all_btn">
+                                Все характеристики
+                                <img src="../assets/image/catalog/arrow.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="delivery_buy">
+                    <div class="item delivery">
+                        <div class="name">
+                            <p>Доставка</p>
+                        </div>
+                        <div class="delivery_item">
+                            <div class="ellipse"></div>
+                            <p><span class="bold">12 февраля</span>, курьер 0 ₽<br>
+                                улица Бари Галеева, 3а
+                            </p>
+                        </div>
+                        <div class="delivery_item">
+                            <div class="ellipse"></div>
+                            <p><span class="bold">12 февраля</span>, пункт выдачи 0 ₽<br>
+                                Казань
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item buy">
+                        <div class="price">
+                            <p>29 990 ₽</p>
+                            <div class="old_price">
+                                <div class="line"></div>
+                                <p>34 990 ₽</p>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <button class="btn">В корзину</button>
+                            <div class="favorite">
+                                <button class="fav_btn">
+                                    <img src="../assets/image/productPage/fav.svg" alt="">
+                                    В избранное
+                                </button>
+                                <div class="line"></div>
+                                <button class="fav_btn">
+                                    <img src="../assets/image/productPage/analog.svg" alt="">
+                                    Сравнение
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line_block"></div>
+        <div class="description">
+            <div class="name">
+                <p>Описание</p>
+            </div>
+            <div class="text">
+                <p>Обновлённая версия самой мощной умной колонки с Алисой. LED-дисплей, трёхполосный звук, передача
+                    видео в 4К и встроенный хаб управления Zigbee.
+                    <span class="title"><br>Работает с Умным домом</span>
+                    Можно подключить не только через облачную интеграцию, но и напрямую через встроенный в колонку хаб
+                    Zigbee. Попросите Алису включить свет, закрыть шторы, сделать похолоднее и покормить кота.
+                </p>
+                <details id="det">
+                    <p>Свет. Пусть Алиса включит свет, когда у вас заняты руки, и выключит – когда вы уже легли в
+                        кровать.
+                        <br>Климат. Попросите Алису сделать холоднее, когда проснулись ночью от жары, или установить
+                        определённую температуру, когда только вошли домой.
+                        <br>Шторы. Станции также поддерживают работу со всеми моторами Aqara для автоматических штор.
+                        Настройте расписание на открытие штор по будням, а в выходные – открывайте их голосом, когда
+                        проснётесь.
+
+                        <span class="title"><br>Звук</span>
+                        Пять разных динамиков – низкие, средние и высокие частоты. Для того, чтобы слышать каждый
+                        инструмент. Мощность – 65 Вт, подходит даже для больших вечеринок.
+
+                        <span class="title"><br>Колонки дружат</span>
+                        В режиме мультирума все колонки в доме воспроизводят одно и то же. В независимости от модели – и
+                        маленькие, и большие, и Станция Макс.
+                        <br>Погода на экране<br>
+                        Когда Алиса не занята, то показывает время или погоду на встроенном LED-экране. А во время
+                        разговора выражает эмоции через анимацию. Скажите Алисе что-нибудь приятное — и она вам
+                        подмигнёт!
+
+                        <span class="title"><br>Кино в 4К</span>
+                        Подключите Станцию Макс к телевизору по HDMI кабелю и смотрите видео в 4К. А благодаря разъёму
+                        Ethernet картинка будет стабильная. Попросите Алису, и она посоветует фильм на вечер и включит
+                        его на телевизоре.
+                    </p>
+                    <summary class="category">
+                        <p id="title_btn">Читать полностью</p>
+                        <img src="../assets/image/catalog/arrow2.svg" alt="">
+                    </summary>
+                </details>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function slider(image) {
+            document.querySelector(".choise-1").src = image + "image_1.png";
+            document.querySelector(".choise-2").src = image + "image_1.png";
+            document.querySelector(".choise-3").src = image + "image_2.png";
+            document.querySelector(".choise-4").src = image + "image_3.png";
+            document.querySelector(".choise-5").src = image + "image_4.png";
+        }
+
+        function color_text(id) {
+            document.querySelector(".color_text").textContent = document.getElementById(id).alt;
+        }
+
+        var details = document.querySelector("details");
+        details.addEventListener("toggle", (event) => {
+            if (details.open) {
+                document.getElementById("title_btn").textContent = "Скрыть";
+            } else {
+                document.getElementById("title_btn").textContent = "Читать полностью";
+            }
+        });
+
+        function slider_2(image_class) {
+            document.querySelector(".choise-1").src = document.querySelector(image_class).src;
+        }
+    </script>
+    <!-- product -->
+
+    <!-- footer -->
+    <footer class="container mt-150">
+        <div class="line_top"></div>
+        <div class="footer_content">
+            <div class="contact_content">
+                <a class="item"
+                    href="https://yandex.ru/maps/43/kazan/house/ulitsa_bari_galeyeva_3a/YEAYdwBmT00OQFtvfXRxcHlgYg==/?ll=49.176689%2C55.801536&z=16">
+                    <div class="cont_img">
+                        <img src="../assets/image/footer/address.svg" alt="icon">
+                    </div>
+                    <p>г.Казань ул. Бари Галеева, 3А</p>
+                </a>
+                <a class="item" href="mailto:smarthouse@gmail.com">
+                    <div class="cont_img">
+                        <img src="../assets/image/footer/email.svg" alt="icon">
+                    </div>
+                    <p>smarthouse@gmail.com</p>
+                </a>
+                <a class="item" href="tel:+7 (939) 749-23-18">
+                    <div class="cont_img">
+                        <img src="../assets/image/footer/phone.svg" alt="icon" class="phone">
+                    </div>
+                    <p>+7 (939) 749-23-18</p>
+                </a>
+            </div>
+            <div class="nav_block">
+                <nav>
+                    <a href="../index.html">Главная</a>
+                    <a href="catalog.html">Каталог</a>
+                    <a href="about.html">О компании</a>
+                </nav>
+            </div>
+            <div class="right_block">
+                <div class="icons">
+                    <a href="https://vk.com">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_13_18)">
+                                <mask id="mask0_13_18" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0"
+                                    y="0" width="32" height="32">
+                                    <path d="M31.8416 0.158691H0.158447V31.8419H31.8416V0.158691Z" />
+                                </mask>
+                                <g mask="url(#mask0_13_18)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M2.3856 2.38584C0.158447 4.613 0.158447 8.19753 0.158447 15.3666V16.6339C0.158447 23.803 0.158447 27.3876 2.3856 29.6147C4.61275 31.8419 8.19729 31.8419 15.3664 31.8419H16.6337C23.8028 31.8419 27.3873 31.8419 29.6145 29.6147C31.8416 27.3876 31.8416 23.803 31.8416 16.6339V15.3666C31.8416 8.19753 31.8416 4.613 29.6145 2.38584C27.3873 0.158691 23.8028 0.158691 16.6337 0.158691H15.3664C8.19729 0.158691 4.61275 0.158691 2.3856 2.38584ZM5.50505 9.79573C5.67664 18.0334 9.79542 22.9838 17.0166 22.9838H17.4259V18.2709C20.0793 18.535 22.0858 20.4756 22.8911 22.9838H26.6403C25.6106 19.2347 22.9042 17.162 21.2145 16.37C22.9042 15.3931 25.2805 13.0168 25.8481 9.79573H22.4421C21.7028 12.4096 19.5117 14.7858 17.4259 15.0102V9.79573H14.0198V18.931C11.9076 18.403 9.241 15.8419 9.12219 9.79573H5.50505Z" />
+                                </g>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_13_18">
+                                    <rect width="32" height="31.6832" transform="translate(0 0.158691)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="https://www.whatsapp.com">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.01867 10.6753C8.17103 9.47036 9.73703 7.83268 10.9798 8.0144L10.9779 8.01241C12.1873 8.24225 13.1448 10.324 13.6847 11.26C14.0672 11.9392 13.8188 12.6273 13.462 12.9176C12.9807 13.3056 12.228 13.8409 12.3859 14.3784C12.6667 15.3338 16 18.6672 17.6395 19.6148C18.26 19.9734 18.71 19.0274 19.0943 18.5428C19.3735 18.17 20.0621 17.9472 20.7397 18.3152C21.7517 18.9045 22.7051 19.5894 23.5867 20.3605C24.0269 20.7285 24.1303 21.2724 23.8252 21.8472C23.2879 22.8596 21.7337 24.1946 20.6056 23.9233C18.6352 23.4496 10.6667 20.3605 8.10711 11.4112C7.96316 10.9878 7.9994 10.8277 8.01867 10.6753Z" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16 30.6673C14.3686 30.6673 13.4659 30.4922 12 30.0006L9.19261 31.4044C7.41953 32.2909 5.33337 31.0016 5.33337 29.0192V26.0007C2.46211 23.3233 1.33337 20.2362 1.33337 16.0007C1.33337 7.90048 7.89987 1.33398 16 1.33398C24.1002 1.33398 30.6667 7.90048 30.6667 16.0007C30.6667 24.1008 24.1002 30.6673 16 30.6673ZM8.00004 24.8411L7.15197 24.0503C4.9212 21.9703 4.00004 19.6448 4.00004 16.0007C4.00004 9.37324 9.37263 4.00065 16 4.00065C22.6275 4.00065 28 9.37324 28 16.0007C28 22.6281 22.6275 28.0006 16 28.0006C14.6858 28.0006 14.0694 27.882 12.848 27.4724L11.798 27.1203L8.00004 29.0192V24.8411Z" />
+                        </svg>
+                    </a>
+                    <a href="https://web.telegram.org">
+                        <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M29.4022 0.52105L1.05171 11.7761C-0.0891566 12.3002 -0.475037 13.3499 0.77591 13.9195L8.0491 16.299L25.6346 5.11034C26.5947 4.40791 27.5778 4.59523 26.7319 5.36789L11.6283 19.4465L11.1539 25.4045C11.5933 26.3245 12.398 26.3287 12.9112 25.8715L17.0898 21.801L24.2464 27.318C25.9085 28.3311 26.813 27.6773 27.1706 25.8205L31.8647 2.93803C32.3521 0.652404 31.5209 -0.354636 29.4022 0.52105Z" />
+                        </svg>
+                    </a>
+                </div>
+                <p>Ясавиев Алмаз Ильнарович</p>
+                <p>© 2025 | Все права защищены</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+</body>
+
+</html>
